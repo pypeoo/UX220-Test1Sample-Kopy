@@ -1,59 +1,110 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta charset="UTF-8"
     <title>Question 3</title>
     <!-- 
-Write an article using semantic markup: header, footer, main and section. In the article, compare and contrast old fashioned typesetting with desktop pubishing, html and css.
-Color the header with white text on a blue background, the footer with white text on a green background, the main portion with black text o a parchment colored background. 
+Write an article using semantic markup: header, footer, main and section. In the article, compare and contrast old-fashioned typesetting with desktop pubishing, html and css.
+Color the header with white text on a blue background, the footer with white text on a green background, the main portion with black text on a parchment colored background. 
 Make the nouns in the header and footer have a text weight of 600, while the rest of the text has a font-weight of 400.
     -->
- <style>
-      body {
-        font-family: Arial, Verdana, sans-serif;
-        line-height: 150%;
-      }
+    <style>
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            line-height: 150%;
+            font-weight: 400;
+        }
 
-      header {
-        color: #ffffff;
-        background-color: #00008B;
-        text-align: center;
-      }
+     header {
+            color: #ffffff;
+            background-color: #00008B;
+            text-align: center;
+        }
 
-      footer {
-        color: #ffffff;
-        background-color: #00674F;
-        text-align: center;
-      }
+        footer {
+            color: #ffffff;
+            background-color: #00674F;
+            text-align: center;
+        }
 
+        main {
+            color: #000000;
+            background-color: #F1E9D2;
+        }
 
-      .small-text {
-        font-size: 0.6em;
-      }
+        h1 {
+            font-weight: 400;
+        }
 
-      main h2 {
-        color: #4b286d;
-        background-color: #eee5f5;
-      }
+        h2 {
+            font-weight: 400;
+        }
 
-      main p {
-        color: #49352a;
-        background-color: #fff4e6;
-      }
-
-      footer a {
-        color: #ffffff;
-      }
+        .noun {
+            font-weight: 600;
+        }
     </style>
-</style> 
-     <img src="typesetting.jpg" width="300">
 </head>
 
 <body>
-    <head> 
-        <h1> <strong> Compare and contrast old fashioned typesetting with desktop pubishing</strong> </h1>
-        <h2> </h2>
-        
-    </head>
+
+    <header>
+        <h1>The <span class="noun">History</span> of
+            <span class="noun">Publishing</span></h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Old-Fashioned Typesetting</h2>
+            <img src="typesetting.jpg" width="300">
+            <p>
+                Old-fashioned typesetting: involved arranging metal letters
+                by hand to create printed pages. The process took time,
+                and correcting mistakes required moving or replacing
+                the letters.
+            </p>
+        </section>
+
+        <section>
+            <h2>Desktop Publishing</h2>
+            <p>
+                Desktop publishing uses computer software to arrange text
+                and images. Like traditional typesetting, it focuses on
+                the appearance of a page. However, designers can edit
+                their work more quickly and preview it before printing.
+            </p>
+        </section>
+
+        <section>
+            <h2>HTML and CSS</h2>
+            <p>
+                HTML organizes the content of a web page using elements
+                such as headings, paragraphs and sections. CSS controls
+                its appearance, including fonts, colours and backgrounds.
+                A style sheet can apply the same design to several pages.
+            </p>
+        </section>
+
+        <section>
+            <h2>Comparing the Methods</h2>
+            <p>
+                All these methods organize text to make information
+                easier to read. Traditional typesetting uses physical
+                materials, while desktop publishing uses digital tools.
+                Both usually produce fixed pages. HTML and CSS create
+                web pages that can adjust to different screen sizes.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            The <span class="noun">tools</span> have changed,
+            but clear <span class="noun">communication</span>
+            remains the <span class="noun">goal</span>.
+        </p>
+    </footer>
+
 </body>
+
 </html>
